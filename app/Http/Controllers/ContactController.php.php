@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 use App\Mail\ContactMe;
 use Illuminate\Support\Facades\Mail;
 
@@ -21,6 +19,8 @@ class ContactController extends Controller
 
         Mail::to(request('email'))
             ->send(new ContactMe('shirts'));
+
+            
         //good but does not have styling
         // Mail::raw('It works', function ($message) {
         //     $message->to(request('email'))->subject('Hello There');
