@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
+
 use App\Mail\ContactMe;
 use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
-{
+{   
     public function show()
     {
         return view('contact');
