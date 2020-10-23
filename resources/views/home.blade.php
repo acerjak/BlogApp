@@ -16,6 +16,7 @@
 
                     You are logged in, {{ Auth::user()->name }}!
                 </div>
+                <a class="btn shadow-sm" href="/contact">Email me!</a>
             </div>
         </div>
     </div>
